@@ -19,3 +19,13 @@ Enter the replacement:Dan
 ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Dan']
 
 """
+people = ['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Rick']
+print(people)
+kill = input("Choose a person from the list to replace: ")
+rep = input("Enter the replacement: ")
+if kill in people:
+    people.remove(kill)
+    people.append(rep)
+    print(people)
+else:
+    exit()

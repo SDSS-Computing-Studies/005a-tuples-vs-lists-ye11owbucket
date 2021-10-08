@@ -23,3 +23,9 @@ Enter a word: virus
 
 ['apple', 'worm', 'dollar', 'shingle', 'virus']
 """
+List = [] 
+maxLengthList = 5
+while len(List) < maxLengthList:
+    stringin = input("Enter a word: ")
+    List.append(stringin)
+print(List)

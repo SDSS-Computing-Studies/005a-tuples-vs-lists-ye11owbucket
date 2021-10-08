@@ -24,4 +24,9 @@ The animal at that index is Dog
 
 
 
-animals =
+animals = ["Cat","Fish","Dog","Bear","Turtle"]
+animals.sort()
+input = int(input("Enter the index for an animal: "))
+remlist = animals.pop(input)
+animal1 = "The animal at that index is " + remlist
+print(animal1)
