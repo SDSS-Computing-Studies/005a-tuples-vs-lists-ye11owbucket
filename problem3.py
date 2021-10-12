@@ -24,4 +24,18 @@ Enter an integer:-1
 The largest number you entered is 92
 """
 
+List = [] 
+count = 0
+stringin = input("Enter a word: ")
+List.append(stringin)
+while int(stringin) > 0:
+    stringin = input("Enter a word: ")
+    List.append(stringin)
+    count = count + 1
+    print(count)
+    print(List)
+    
+List.sort()
+most = str(List.pop(count))
+print( "The largest number you entered is", most)
 

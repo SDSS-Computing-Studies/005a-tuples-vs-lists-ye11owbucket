@@ -25,4 +25,17 @@ word not in list
 """
 
 fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry","kiwi"]
+kill = input("Enter a fruit: ")
+if kill in fruit:
+    for i in fruit:
+        fruit.remove(kill)
+        if kill not in fruit:
+            print(fruit)
+            break
+else:
+    print("word not in list")
+    fruit.append(kill)
+    print(fruit)
+   
+
 
