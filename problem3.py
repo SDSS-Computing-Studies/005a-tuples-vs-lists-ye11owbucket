@@ -24,16 +24,15 @@ Enter an integer:-1
 The largest number you entered is 92
 """
 
-List = [] 
-count = 0
-stringin = input("Enter a number: ")
-List.append(stringin)
-while int(stringin) > 0:
-    stringin = input("Enter a number: ")
-    List.append(stringin)
-    count = count + 1
-    
-List.sort()
-most = str(List.pop(count))
-print( "The largest number you entered is", most)
+myList =[]
+x = True
+while x :
+    a=input("Enter an integer: ")
+    myList.append(int(a))
+    if -1 in myList:
+        x = False
+
+myList.sort(reverse=True)
+
+print("The largest number you entered is",str(myList[0]))
 
