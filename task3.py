@@ -13,10 +13,10 @@ example:
 The smallest number is 3 and the largest number is 9
 """
 
-List = [ 3,6,5,4,6,7,8,6,5,9,4,5 ]
-List.sort()
-least = List[0]
-most = List[-1]
+myList = [ 3,6,5,4,6,7,8,6,5,9,4,5 ]
+myList.sort()
+least = myList[0]
+most = myList[-1]
 least = str(least)
 most = str(most)
 print("The smallest number is " + least +" and the largest number is " + most)
