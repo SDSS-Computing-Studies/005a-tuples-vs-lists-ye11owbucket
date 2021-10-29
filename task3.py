@@ -15,6 +15,8 @@ The smallest number is 3 and the largest number is 9
 
 List = [ 3,6,5,4,6,7,8,6,5,9,4,5 ]
 List.sort()
-least = str(List.pop(0))
-most = str(List.pop(10))
-print("The smallest number is " + least +" and the largest number is " +most)
+least = List[0]
+most = List[-1]
+least = str(least)
+most = str(most)
+print("The smallest number is " + least +" and the largest number is " + most)
